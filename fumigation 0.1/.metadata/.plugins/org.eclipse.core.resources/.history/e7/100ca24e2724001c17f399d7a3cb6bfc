@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Grade {
+	public static void main(String ar[]) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+	System.out.println("enter the marks obtained by the sutdent: ");
+	
+	System.out.println("written test: ");
+	int writ= sc.nextInt();
+	
+	System.out.println("lab exams: ");
+	int lab=sc.nextInt();
+	
+	System.out.println("assignments: ");
+	int asig=sc.nextInt();
+	
+	int grd= (writ*60)/100 + (lab*20)/100 + (asig*10)/100;
+	
+	System.out.println("Grade of the student: "+grd);
+	
+	
+		
+	}
+}

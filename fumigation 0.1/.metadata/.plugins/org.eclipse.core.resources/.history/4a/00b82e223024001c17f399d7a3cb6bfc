@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class IncomeTx {
+	public static void main(String ar[]) {
+		
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("enter your income: ");
+		float incom= sc.nextFloat();
+		float tax=0;
+		if(incom<250000) {
+			tax=0;
+		}
+		else if(incom>1000000) {
+			tax=(incom*30)/100;
+		}
+		else if(incom>500000) {
+			tax=(incom*20)/100;
+		}
+		else if(incom>250000) {
+			tax=(incom*5)/100;
+		}
+		
+		System.out.println("your income is "+incom);
+		System.out.println("and your tax is"+tax);
+		
+		
+		
+	}
+	
+
+
+}

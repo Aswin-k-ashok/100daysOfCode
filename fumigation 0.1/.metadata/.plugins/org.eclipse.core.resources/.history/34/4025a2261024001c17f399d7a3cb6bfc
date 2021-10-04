@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class FunCalc {
+public static void main(String ar[]) {
+	
+	Scanner sc = new Scanner (System.in);
+	
+	System.out.println("enter your choice \na1:addition\n2:subtraction\n3:multiplication\n4:division");
+	
+	
+	
+	
+}
+	
+	
+}
