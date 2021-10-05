@@ -1,36 +1,35 @@
 #include <stdio.h>
-void getArray(int[]);
+
+int getArray(int[],int);
 void displayArray(int[],int);
+int main (void){
 
-int main(void){
     int ary[50];
+    int result[50];
+    int limit=0;
+    printf("enter the array size: \n");
+    scanf("%d",&limit);
 
-    getArray(ary);
-    
+    ary[50]=getArray(ary,limit);
+
+    displayArray(ary[50],limit);
 
     return 0;
 }
 
-void getArray(int ary[]){
-    int i,lmt;
-
-    printf("enter the array size: ");
-    scanf("%d",&lmt);
-
-    printf("enter the array values: \n");
+int getArray(int arry[],int lmt){
+    int i=0;
+    printf("enter the array elements: \n");
     for(i=0;i<lmt;i++){
-        scanf("%d",&ary[i]);
+        scanf("%d",&arry[i]);
+        return arry;
     }
-
-    displayArray(ary ,lmt);
 }
 
-void displayArray(int arry[],int limt){
-
-    int i;
+void displayArray(int arry[],int lmt){
+    int i=0;
     printf("the enterd array is\n");
-    for(i=0;i<limt;i++){
+    for(i=0;i<lmt;i++){
         printf("%d ",arry[i]);
     }
-    
 }
