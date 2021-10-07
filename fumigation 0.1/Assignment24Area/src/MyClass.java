@@ -15,14 +15,12 @@ public class MyClass extends Area {
 			System.out.println("enter the radius");
 			float rad=sc.nextFloat();
 			obj.Circle(rad);
-			System.out.println("area of the circle is "+area);
 			break;
 			
 		case 2:
 			System.out.println("enter the length");
 			float len=sc.nextFloat();
 			obj.Square(len);
-			System.out.println("area of the square"+obj.area);
 			break;
 			
 		case 3:
@@ -41,6 +39,7 @@ public class MyClass extends Area {
 			
 			
 		default:	
+			System.out.println("enter a valid choice");
 		
 		
 		}

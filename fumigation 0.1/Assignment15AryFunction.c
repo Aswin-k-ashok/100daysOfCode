@@ -1,35 +1,81 @@
 #include <stdio.h>
-
-int getArray(int[],int);
-void displayArray(int[],int);
 int main (void){
 
-    int ary[50];
-    int result[50];
-    int limit=0;
-    printf("enter the array size: \n");
-    scanf("%d",&limit);
+	int row;
+	int column;
+	int number=7;
 
-    ary[50]=getArray(ary,limit);
+	for(row=1;row<=number;row++){
+		for(column=1;column<=number;column++){
+			if(row==1||column==1||column==number||row==3){
+			printf("*");
+		}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
 
-    displayArray(ary[50],limit);
+	printf("\n\n");
 
-    return 0;
-}
+	for(row=1;row<=number;row++){
+		for(column=1;column<=number;column++){
+			if(row==1||row==number||row==column){
+			printf("*");
+		}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
 
-int getArray(int arry[],int lmt){
-    int i=0;
-    printf("enter the array elements: \n");
-    for(i=0;i<lmt;i++){
-        scanf("%d",&arry[i]);
-        return arry;
-    }
-}
+	printf("\n\n");
 
-void displayArray(int arry[],int lmt){
-    int i=0;
-    printf("the enterd array is\n");
-    for(i=0;i<lmt;i++){
-        printf("%d ",arry[i]);
-    }
+		for(row=1;row<=number;row++){
+		for(column=1;column<=number;column++){
+			if(column==1||column==number||column==4&&row==5){
+			printf("*");
+		}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+
+	printf("\n\n");
+
+	
+		for(row=1;row<=number;row++){
+		for(column=1;column<=number;column++){
+			if(column==4){
+			printf("*");
+		}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+
+	printf("\n\n");
+
+		
+		for(row=1;row<=number;row++){
+		for(column=1;column<=number;column++){
+			if(column==1||column==number||row==column){
+			printf("*");
+		}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+
+	printf("\n\n");
+
+	return 0;
 }
