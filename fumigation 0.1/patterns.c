@@ -4,7 +4,7 @@ int main(void){
 
     int row;
     int col;
-    int num=5;
+    int num=6;
     int space;
 
 
@@ -105,6 +105,20 @@ for(row=1;row<=num;row++){
         }
     printf("\n");
 }
+
+////////////////////////////////////////////////
+
+    for(row=1;row<=num;row++){
+        for(col=1;col<=row;col++){
+            if(row%2==0&&col%2==0){
+                printf("$");
+            }
+            else{
+                printf("*");
+            }
+        }
+        printf("\n");
+    }
 
 
 

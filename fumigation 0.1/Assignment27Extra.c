@@ -24,22 +24,26 @@ int main(void){
     }
     
     if(length1!=length2){
-        printf("\n\nthe strings are different\n\n");
+        printf("\n\nthe strings are not identical");
+
     } 
 
     else{
         for(i=0;i<length1;i++){
-            if(st1[i]==st2[i]){
+            if(st1[i]!=st2[i]){
                 flag=1;
             }
         }
+         if(flag==1){
+        printf("\n\nthe strings are not identical\n\n");
+    }
+    else{
+        printf("\n\n the strings are identical\n\n");
     }
 
-    if(flag==1){
-        printf("\n\nthe stings are identical\n\n");
     }
 
-
+   
 
 
     return 0;
