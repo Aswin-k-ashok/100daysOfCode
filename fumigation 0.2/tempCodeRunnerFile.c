@@ -1,1 +1,2 @@
-printf("%d ",power);
+
+       num/10;
