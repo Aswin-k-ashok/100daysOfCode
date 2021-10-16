@@ -7,7 +7,7 @@ int main(void) {
     printf("enter a limit: ");
     scanf("%d", & n);
 
-    for (r = 1; r <= n; r++) {          //column number half pyramid
+    for (r = 1; r <= n; r++) { //column number half pyramid
         for (c = 1; c <= r; c++) {
             printf("%d ", c);
         }
@@ -16,7 +16,7 @@ int main(void) {
 
     printf("\n\n");
 
-    for (r = n; r >= 1; r--) {          //column number inverted half pyramid
+    for (r = n; r >= 1; r--) { //column number inverted half pyramid
         for (c = 1; c <= r; c++) {
             printf("%d ", c);
         }
@@ -25,7 +25,7 @@ int main(void) {
 
     printf("\n\n");
 
-    for (r = 1; r <= n; r++) {              //column number hollow inverted half pyramid
+    for (r = 1; r <= n; r++) { //column number hollow inverted half pyramid
         for (c = 1; c <= r; c++) {
             if (r == n || c == 1 || c == r) {
                 printf("%d ", c);
@@ -40,8 +40,8 @@ int main(void) {
 
 
 
-    
-    for (i = 1; i <= n; i++) {                  //palindrome pyramid
+
+    for (i = 1; i <= n; i++) { //palindrome pyramid
         for (j = 1; j <= n - i; j++) {
             printf(" ");
             ++count;
@@ -62,19 +62,21 @@ int main(void) {
         printf("\n");
     }
 
-    printf("\n\n");             // hollow column pyramid
+    printf("\n\n"); // hollow column pyramid
 
-    for(r=1;r<=n;r++){
-        for(j=1;j<=n-r;j++)
+    for (r = 1; r <= n; r++) {
+        for (j = 1; j <= n - r; j++)
             printf(" ");
-            for(c=1;c<=r;c++)
-            if(r==c||r==n||c==1){
-                printf("%d ",c);
+        for (c = 1; c <= r; c++)
+            if (r == c || r == n || c == 1) {
+                printf("%d ", c);
             }
-            else{printf("  ");}
-        
-        printf("\n");
+        else {
+            printf("  ");
         }
+
+        printf("\n");
+    }
 
     return 0;
 }
