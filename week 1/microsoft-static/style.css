@@ -142,18 +142,18 @@ ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 5% 5% 10% 10%;
+    margin: 5% 10% 5% 10%;
     white-space: pre-wrap;
 }
 
 .iconBar img {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 .iconBar .imgs {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
@@ -176,6 +176,13 @@ ul {
     padding-bottom: 5px;
     font-weight: 600;
     color: #262626;
+}
+.business {
+
+        margin-bottom: 65px;
+        margin-top: 39px;
+        margin-left: 7px;
+    
 }
 
 .card p {
