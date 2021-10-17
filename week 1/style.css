@@ -164,6 +164,7 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     margin-left: 10px;
+    line-height: 25px;
 }
 
 .card img {
@@ -173,6 +174,8 @@ ul {
 
 .card h3 {
     padding-bottom: 5px;
+    font-weight: 600;
+    color: #262626;
 }
 
 .card p {
@@ -184,6 +187,8 @@ ul {
     color: #0067C1;
     padding-top: 10px;
     font-weight: 700;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* the second showcase */
@@ -266,10 +271,16 @@ ul {
 
 /* social links */
 
-.social {
-    display: flex;
-    flex-direction: row;
+section .social {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.social {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .social p {
@@ -317,4 +328,60 @@ section .list{
     padding-bottom: 10px;
     font-weight: 200;
     font-size: 12px;
+}
+
+.prefoot a{
+    color: #6A6060;
+    text-decoration: none;
+}
+
+.prefoot  a:hover{
+    text-decoration: underline;
+    color: #262626;
+}
+
+/* footer section */
+
+footer{
+    width: 100%;
+    background-color: #E6E6E6;
+    padding-bottom: 60px;
+}
+
+footer .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px 0 45px;
+}
+
+footer .glbicon{
+    display: flex;
+    flex-direction: row;
+}
+
+.glbicon a{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.foot ul li{
+    padding-right: 15px;
+}
+
+.foot a, .foot p{
+    color: #6A6060;
+    text-decoration: none;
+}
+
+.foot a:hover{
+    text-decoration: underline;
+    color: #262626;
 }
