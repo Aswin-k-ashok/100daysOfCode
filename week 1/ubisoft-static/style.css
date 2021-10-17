@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Ubisoft Sans,sans-serif;;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+header{
+    height: 55px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+}
+
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header h1{
+    font-size: 18px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+header li{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+}
+
+header a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+
+}
+
+
+header .right a{
+    background-color: #BFBFC0;
+    background-size: 10px 10px;
+    margin-right: 45px;
+}
+header .right #search{
+    border-radius: 50%;
+    
+}
+
+header .right .fa-user-alt{
+    background-color: #BFBFC0;
+    color: #939393;
+    border-radius: 50%;
+    padding: 5px;
+    padding-top: 2px;
+}
+
+/* home cover */
+
+.homcov{
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ro8HqjNCeWwAbotJtwRXU/fc9db0da114e82eb439a54c672f16e11/fc6-homescreen-launch-artwork-v2.jpg" ) no-repeat center center;
+      background-size:90% 90%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='lalala.jpg', sizingMethod='scale');
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='lalala.jpg', sizingMethod='scale')";
+      height:79%;
+}
