@@ -1,3 +1,10 @@
+:root{
+    --ubi-orng: #D44B1A;
+    --ubi-purp: #30164c;
+    --ubi-pink: #D80289;
+    --ubi-blue: #006FF4;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +16,18 @@ html{
     height: 100%;
 }
 
+.container{
+    width: 100%;
+    height: auto;
+}
+
 body {
     font-family: Ubisoft Sans,sans-serif;;
     background-color: white;
     color: black;
     font-size: 15px;
     line-height: 15px;
+    
 }
 
 header{
@@ -87,10 +100,94 @@ header .right .fa-user-alt{
 
 /* home cover */
 
+    .yara {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: row;
+        background-color: var(--ubi-orng);
+        width: 100%;
+        height: 140px;
+    }
+    .yara h1 {
+        padding-top: 25px;
+        text-align: center;
+        line-height: 40px;
+        color: #ffffff;
+        font-size: 38px;
+        margin-left: 75px;
+        font-weight: 700;
+    }
+
+    .yara button {
+        margin-top: 25px;
+        margin-left: 43px;
+        margin-right: -244;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 15px 45px 15px 45px;
+        border-radius: 50px;
+        border: none;
+        color: #ffffff;
+        background: var(--ubi-purp);
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+
+
 .homcov{
-    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ro8HqjNCeWwAbotJtwRXU/fc9db0da114e82eb439a54c672f16e11/fc6-homescreen-launch-artwork-v2.jpg" ) no-repeat center center;
-      background-size:90% 90%;
-      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='lalala.jpg', sizingMethod='scale');
-      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='lalala.jpg', sizingMethod='scale')";
-      height:79%;
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ro8HqjNCeWwAbotJtwRXU/fc9db0da114e82eb439a54c672f16e11/fc6-homescreen-launch-artwork-v2.jpg" ) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0px 0px 14px black;
+}
+
+.homcov h1 {
+	font-size: 55px;
+	font-weight: 700;
+	padding: 30px;
+	margin-top: 202px;
+}
+
+.homcov h3{
+    font-size: 25px;
+    font-weight: 300;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.homcov button {
+	background: var(--ubi-orng);
+	border: none;
+	padding: 20px;
+	padding-left: 76px;
+	padding-right: 72px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #ffffff;
+	border-radius: 30px;
+	margin: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+}
+
+.menu h2{
+    text-align: center;
+    line-height: 30px;
+    opacity: 50%;
 }
