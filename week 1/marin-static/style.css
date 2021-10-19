@@ -1,0 +1,428 @@
+:root {
+    --marblu: #01A1DF;
+    --marfont: 'Roboto Condensed', sans-serif
+}
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif; 
+  
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 115px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-right: 55px; */
+
+}
+
+.navbar .logo {
+    /* margin-right: 55px; */
+}
+
+.navbar ul li {
+    padding-left: 25px;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.rightlst {
+    margin-right: 30px;
+}
+
+.navbar .logo img {
+    width: 120px;
+    height: 100px;
+}
+
+.rightlst img {
+    border: 3px solid var(--marblu);
+    border-radius: 6px;
+}
+
+.spacer {
+    height: 115px;
+}
+
+/* cover section */
+
+
+
+.coverpic {
+    width: 100%;
+    height: 635px;
+
+    background: url("https://s3.us-east-1.amazonaws.com/craft-marinbikes/images/2020/mod/hero/image/_heroStandard1676X786/Marin-Bikes-DSX-FS_small.jpg")no-repeat center center/cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.coverpic .since{
+    height: 312px;
+    width: 574px;
+    padding-right: 94px;
+    padding-left: 41px;
+    padding-top: 46px;
+    padding-bottom: 38px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+
+.coverpic h1{
+    font-size: 70px;
+    font-weight: 900;
+    color: var(--marblu);
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.coverpic button{
+    padding: 0px 30px 0px 30px;
+    background: var(--marblu);
+    margin: 0;
+    border: none;
+    border-radius: 7px;
+}
+
+.coverpic button p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    font-weight:700;
+}
+
+/* recent section */
+
+.news{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 30px;
+}
+
+.news .desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.news img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.desc button{
+    padding: 0px 30px 0px 30px;
+    background: black;
+    margin: 0;
+    border: none;
+    border-radius: 7px;
+}
+
+.desc button p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight:700;
+    color: white;
+}
+
+.desc h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.desc h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+/* the marin collection */
+
+.collection-hed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.collection-hed h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 30px;
+}
+
+.collection-hed h3{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    font-weight:600;
+    
+}
+
+.cardgrid{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.card{
+    background: #F1F0F0;
+    padding-bottom: 50px;
+    border-radius: 8px;
+}
+
+.cardgrid img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card button{
+    padding: 0px 30px 0px 30px;
+    background: black;
+    margin: 0;
+    border: none;
+    border-radius: 7px;
+    margin-left: 30px;
+}
+
+.card button p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    font-weight:600;
+    color: white;
+}
+
+.card h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 30px;
+}
+
+
+/* bottom grid section */
+
+.bottom-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.bottom-grid .bcard{
+    background-color: black;
+    color: white;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    margin-top: 230px;
+}
+
+.bottom-grid img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bottom-grid h1{
+    margin: 20px;
+}
+.bottom-grid h3{
+    margin: 30px;
+}
+.bottom-grid button{
+    margin: 20px;
+}
+
+.bottom-grid button{
+    padding: 0px 20px 0px 20px;
+    background: var(--marblu);
+    margin: 0;
+    border: none;
+    border-radius: 7px;
+    margin-left: 30px;
+}
+
+.bottom-grid p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight:600;
+    color: black;
+}
+
+.bottom-grid h1{
+    font-size:40px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 30px;
+}
+
+.bottom-grid h3{
+    font-size: 30;
+    font-weight: 500;
+    color: white;
+}
+
+
+/* prefooter area */
+
+.prefoot{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background: var(--marblu);
+}
+
+.mailForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: var(--marblu);
+    padding-top: 40px;
+}
+
+.mail{
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 18px;
+}
+
+ div.mailForm form input.mail{
+    font-size: 18px;
+}
+.mailForm button{
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.mailForm button p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* bottom menu section */
+
+
+.bottomenu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--marblu);
+}
+
+
+.bottomenu ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottomenu h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.bottomenu li{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+
+.final {
+	background: url("https://www.marinbikes.com/assets/img/general/marin-footer-alt.png");
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	padding-bottom: 200px;
+	/* background-size: 888px 1101px; */
+	background-repeat: no-repeat;
+	height: 600px;
+}
+
+.final ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.final ul li i{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.final ul li h3{
+    font-size: 25px;
+}
+
+.final ul li img{
+    height: 50px;
+    width: 50px;
+}
