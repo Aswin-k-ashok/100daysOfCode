@@ -1,4 +1,4 @@
-:root{
+:root {
     --ubi-orng: #D44B1A;
     --ubi-purp: #30164c;
     --ubi-pink: #D80289;
@@ -11,29 +11,38 @@
     padding: 0;
 
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     height: auto;
 }
 
 
 body {
-    font-family: Ubisoft Sans,sans-serif;;
+    font-family: Ubisoft Sans, sans-serif;
+    ;
     background-color: white;
     color: black;
     font-size: 15px;
     line-height: 15px;
-    
-    
+
+
+}
+
+.alignThings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 
-header{
+header {
     height: 55px;
     width: 100%;
     background-color: black;
@@ -48,32 +57,35 @@ header{
     z-index: 50000;
 }
 
-header img{
+header img {
     height: 50px;
     width: 50px;
 }
 
 
-header .logo{
+header .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-header h1{
+
+header h1 {
     font-size: 18px;
 }
-header ul{
+
+header ul {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-header li{
+
+header li {
     padding-left: 35px;
     padding-right: 35px;
     font-size: 15px;
 }
 
-header a{
+header a {
     padding: 20px;
     color: white;
     text-decoration: none;
@@ -84,17 +96,18 @@ header a{
 }
 
 
-header .right a{
+header .right a {
     background-color: #BFBFC0;
     background-size: 10px 10px;
     margin-right: 45px;
 }
-header .right #search{
+
+header .right #search {
     border-radius: 50%;
-    
+
 }
 
-header .right .fa-user-alt{
+header .right .fa-user-alt {
     background-color: #BFBFC0;
     color: #939393;
     border-radius: 50%;
@@ -104,44 +117,45 @@ header .right .fa-user-alt{
 
 /* home cover */
 
-    .yara {
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: row;
-        background-color: var(--ubi-orng);
-        width: 100%;
-        height: 140px;
-    }
-    .yara h1 {
-        padding-top: 25px;
-        text-align: center;
-        line-height: 40px;
-        color: #ffffff;
-        font-size: 38px;
-        margin-left: 75px;
-        font-weight: 700;
-    }
+.yara {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--ubi-orng);
+    width: 100%;
+    height: 140px;
+}
 
-    .yara button {
-        margin-top: 25px;
-        margin-left: 43px;
-        margin-right: -244;
-        margin-bottom: 10px;
-        text-align: center;
-        padding: 15px 45px 15px 45px;
-        border-radius: 50px;
-        border: none;
-        color: #ffffff;
-        background: var(--ubi-purp);
-        font-size: 20px;
-        font-weight: 800;
-    }
+.yara h1 {
+    padding-top: 25px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 38px;
+    margin-left: 75px;
+    font-weight: 700;
+}
+
+.yara button {
+    margin-top: 25px;
+    margin-left: 43px;
+    margin-right: -244;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 45px 15px 45px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background: var(--ubi-purp);
+    font-size: 20px;
+    font-weight: 800;
+}
 
 
 
-.homcov{
-    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ro8HqjNCeWwAbotJtwRXU/fc9db0da114e82eb439a54c672f16e11/fc6-homescreen-launch-artwork-v2.jpg" ) no-repeat center center/cover;
+.homcov {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ro8HqjNCeWwAbotJtwRXU/fc9db0da114e82eb439a54c672f16e11/fc6-homescreen-launch-artwork-v2.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,13 +168,13 @@ header .right .fa-user-alt{
 }
 
 .homcov h1 {
-	font-size: 55px;
-	font-weight: 700;
-	padding: 30px;
-	margin-top: 202px;
+    font-size: 55px;
+    font-weight: 700;
+    padding: 30px;
+    margin-top: 202px;
 }
 
-.homcov h3{
+.homcov h3 {
     font-size: 25px;
     font-weight: 300;
     padding: 20px;
@@ -168,19 +182,19 @@ header .right .fa-user-alt{
 }
 
 .homcov button {
-	background: var(--ubi-orng);
-	border: none;
-	padding: 20px;
-	padding-left: 76px;
-	padding-right: 72px;
-	font-weight: 500;
-	font-size: 20px;
-	color: #ffffff;
-	border-radius: 30px;
-	margin: 20px;
+    background: var(--ubi-orng);
+    border: none;
+    padding: 20px;
+    padding-left: 76px;
+    padding-right: 72px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     font-size: 15px;
@@ -190,7 +204,7 @@ header .right .fa-user-alt{
     height: 50px;
 }
 
-.menu h2{
+.menu h2 {
     text-align: center;
     line-height: 30px;
     opacity: 50%;
@@ -198,18 +212,18 @@ header .right .fa-user-alt{
 
 /* explore area */
 
-#xplore{
+#xplore {
     text-align: center;
     padding: 30px;
 }
 
-.xplore{
+.xplore {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 25px;
 }
 
-.x-cards{
+.x-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -217,124 +231,327 @@ header .right .fa-user-alt{
     line-height: 30px;
 }
 
-.x-cards img{
+.x-cards img {
     width: 90%;
     padding-bottom: 15px;
 }
 
-.x-cards h3{
+.x-cards h3 {
     font-size: 25px;
     font-weight: 700;
 }
 
-.x-cards i{
+.x-cards i {
     padding-top: 15px;
     font-size: 18px;
     color: #939393;
 }
+
 .vag {
-	margin-top: 90px;
-	width: 17%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 17px 43px 17px 43px;
-	border: none;
-	border-radius: 30px;
-	background: var(--ubi-pink);
-	color: #ffffff;
-	font-size: 18px;
-	margin-left: 44%;
+    margin-top: 90px;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 43px 17px 43px;
+    border: none;
+    border-radius: 30px;
+    background: var(--ubi-pink);
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 44%;
 }
 
-.vag p{
+.vag p {
     font-weight: 800;
 }
 
 
 .lat-new {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	width: 100%;
-	height: 201px;
-	margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 201px;
+    margin: 40px;
 }
 
 .lat-hed {
-margin-top: 50px;
-font-size: 30px;
-margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.lat-new ul{
+.lat-new ul {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-.lat-new li{
+
+.lat-new li {
     color: var(--ubi-pink);
     margin: 20px;
     font-size: 17px;
 }
 
-.lat-new li:hover{
+.lat-new li:hover {
     color: black;
     cursor: default;
 }
 
 /* latest news image grid */
 
-.grd-cont{
-    width: 300px;
-    height: 300px;
-    background-color: rebeccapurple;
+.secNews-grid {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.new-grd {
-    width: 1000px;
+.news-grid {
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr 0.8fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gm rc rcd"
-      "gm jckd jck"
-      ". . .";
-  }
-  
-  .gm { grid-area: gm; }
-  
-  .rc { grid-area: rc; }
-  
-  .rcd { grid-area: rcd; }
-  
-  .jckd { grid-area: jckd; }
-  
-  .jck { grid-area: jck; }
-  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.news-grid .col {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-grid .col img {
+    width: 100%;
+    height: auto;
+}
+
+.news-grid .col h2 {
+    line-height: 30px;
+    color: #2C2D2D;
+    margin-left: 15px;
+}
+
+.news-grid .col p {
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.allNews {
+    margin-top: 90px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 43px 17px 43px;
+    border: none;
+    border-radius: 30px;
+    background: var(--ubi-pink);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+
+}
+
+/* ubisoft store section */
+.alignThings #ubiStoreHead {
+    font-size: 41px;
+    margin-top: 100px;
+}
+
+.storegroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #F1F2F4;
+    padding: 30px 0px 100px 0px;
+}
+
+.storegroup .storeCards {
+    margin-bottom: 50px;
+}
+
+.storegroup #c1 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6kUtwzqJgqm7aDKnMa1S0X/6c3d61adef85b68b10d12bc7e746c0a3/UbidotcomACV-STD-buynow-nov2020_908x1080.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.storegroup #c2 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5JKvu0hGlFGEilFuU0vy09/520150dbb1bd8fa3161ea1371c12a77e/Ubidotcom_fc6-standard-preorder-july2020_908x1080.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.storegroup #c3 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1w2jXUMssIuYm0JoKJsnyI/049554e60c70fd920c74c28562dc425c/ubihome-store-promo-r6extraction.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.storegroup .storeCards h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    color: white;
+    line-height: 35px;
+    margin: 10px 10px 0px 10px;
+}
+
+/* inside ubisoft section */
+
+.insidegroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.insidegroup .storeCards {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.insidegroup #c1 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Nq0VG9ojeIMV21nm9xvjv/c8752fb279f773e42d02d8fec210f7f8/inside-ubisoft_star-wars.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.insidegroup #c2 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6UR7WhPOJJUbd4tFbgGaHt/9fb45edefc9ffe01c1d8a61da5df5992/inside-ubi-keys_to_learn-480-v3.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.insidegroup #c3 {
+    background: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4Xmy0DBk8t6dDiHTKUUBZh/55b5e78d22e622746a061c1590bd6832/inside-ubisoft_acv-soundtrack.jpg");
+    width: 450px;
+    height: 600px;
+    /* background-image: url("img/background.jpg"); */
+    background-size: cover;
+    /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.insidegroup h1 {
+    margin-top: 30px;
+    font-size: 35px;
+    color: white;
+    line-height: 35px;
+    background: rgba(1, 0, 1, 0.3);
+    padding: 0px 20px 0px 20px;
+    line-height: 45px;
+
+}
 
 
+/* featured video section */
 
+.ft {
+    background-color: #F1F2F4;
+    ;
+}
 
+.ft-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
+}
 
+.ft-grid img {
+    width: 100%;
+    height: auto;
+}
 
+.ft-grid ul {
+    margin: 60px 30px 60px 30px;
+}
 
-  /* CONNECT SECTION */
+.ft-grid ul li {
+    list-style: none;
+}
 
-.connect{
+.ft-grid h3 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.ftButton {
+    margin-top: 90px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 43px 17px 43px;
+    border: none;
+    border-radius: 30px;
+    background: var(--ubi-pink);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    margin-bottom: 75px;
+
+}
+
+/* eoawoeifjiewjfjjeijiwej */
+
+/* CONNECT SECTION */
+
+.connect {
     display: flex;
     flex-direction: row;
     height: 400px;
     background: #091225;
     width: 100%;
     color: white;
+    /* margin-top: 100px; */
 }
 
-.connect .rightcon{
+.connect .rightcon {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -344,51 +561,52 @@ margin-bottom: 30px;
 }
 
 .connect button {
-	padding: 14px 65px 14px 65px;
-	border: none;
-	border-radius: 30px;
-	background: var(--ubi-blue);
-	color: #ffffff;
-	font-size: 18px;
+    padding: 14px 65px 14px 65px;
+    border: none;
+    border-radius: 30px;
+    background: var(--ubi-blue);
+    color: #ffffff;
+    font-size: 18px;
     margin-top: 20px;
 }
 
 .connect img {
-	height: 74%;
-	width: 40%;
+    height: 74%;
+    width: 40%;
 }
 
-.connect h1{
+.connect h1 {
     font-size: 40px;
     margin-bottom: 45px;
 }
 
-.connect h2{
+.connect h2 {
     margin-top: 25px;
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 30px;
 }
-.connect h2 span{
-    font-weight:600 ;
+
+.connect h2 span {
+    font-weight: 600;
 }
 
-.rightcon p{
+.rightcon p {
     font-weight: 700;
     font-size: 19px;
 }
 
 .connect i {
-	font-size: 101px;
-	position: absolute;
-	margin-left: 50%;
-	margin-top: -43px;
+    font-size: 101px;
+    position: absolute;
+    margin-left: 48%;
+    margin-top: -43px;
 }
 
 
 /* social bar section */
 
-.socbar{
+.socbar {
     display: flex;
     flex-direction: row;
     background: black;
@@ -399,11 +617,11 @@ margin-bottom: 30px;
     justify-content: space-between;
 }
 
-.socbar .ico{
+.socbar .ico {
     margin-right: 40%;
 }
 
-.socbar i{
+.socbar i {
     font-size: 20px;
     margin: 10px;
     background-color: white;
@@ -412,12 +630,12 @@ margin-bottom: 30px;
     border-radius: 50%;
 }
 
-.socbar  #fb{
+.socbar #fb {
     padding-left: 14px;
     padding-right: 14px;
 }
 
-.socbar p{
+.socbar p {
     margin-left: 50px;
     color: #919890;
 }
@@ -425,45 +643,47 @@ margin-bottom: 30px;
 
 /* footer section */
 
-footer{
-  
-   background-color:#1D1E22 ;
+footer {
+
+    background-color: #1D1E22;
 
 }
 
-.toprow{
+.toprow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: white;
 }
 
-.toprow img{
+.toprow img {
     height: 50px;
     width: 50px;
 }
-.toprow h1{
+
+.toprow h1 {
     margin-left: 15px;
     font-size: 30px;
 }
 
-.toprow .logo{
+.toprow .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 30px;
 }
 
-.toprow .globe{
+.toprow .globe {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.toprow i{
+.toprow i {
     font-size: 50px;
 }
-.toprow #move{
+
+.toprow #move {
     margin: 65px;
 }
 
@@ -476,16 +696,15 @@ footer{
 
 
 
-.finalgrid .col li{
+.finalgrid .col li {
     margin: 20px;
     color: white;
     list-style: none;
 }
 
-.finalgrid #right{
+.finalgrid #right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     text-align: right;
 }
-
