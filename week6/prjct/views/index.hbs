@@ -1,0 +1,32 @@
+
+      
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">first-name</th>
+      <th scope="col">last-name</th>
+      <th scope="col">phone no</th>
+      <th scope="col">e-mail</th>
+      <th scope="col">password</th>
+      <th scope="col">password-re</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each users}}
+    <tr>
+      <th scope="row">1</th>
+      <td> {{this.firstName}}</td>
+      <td>{{this.lastName}}</td>
+      <td>{{this.phoneNo}}</td>
+      <td>{{this.eMail}}</td>
+      <td>{{this.password}}</td>
+      <td>{{this.passwordRe}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+
